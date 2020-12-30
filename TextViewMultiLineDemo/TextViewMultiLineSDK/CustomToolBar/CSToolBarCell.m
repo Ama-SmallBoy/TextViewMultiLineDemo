@@ -17,6 +17,6 @@
     // Initialization code
 }
 -(void)bindObject:(NSString  *)imageName{
-    self.imgView.image = [UIImage imageNamed:imageName];
+    self.imgView.image = imageName.length?[UIImage imageNamed:imageName]:nil;
 }
 @end

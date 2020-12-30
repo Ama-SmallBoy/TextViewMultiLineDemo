@@ -37,7 +37,7 @@ static NSString * resuIdentifierId = @"CSToolBarCell";
 -(void)setIsBtnSelected:(BOOL)isBtnSelected{
     _isBtnSelected = isBtnSelected;
     [UIView animateWithDuration:0.3 animations:^{
-      //正的表示逆时针，负的表示顺时针
+        //正的表示逆时针，负的表示顺时针
         self.showKeyBoard.transform = CGAffineTransformRotate(self.showKeyBoard.transform,isBtnSelected?-M_PI:M_PI);
     }];
     self.showKeyBoard.selected = isBtnSelected;
@@ -85,14 +85,13 @@ static NSString * resuIdentifierId = @"CSToolBarCell";
 }
 -(void)setShowNormalImage:(NSString *)showNormalImage{
     _showNormalImage = showNormalImage;
-   [self.showKeyBoard setImage:[UIImage imageNamed:showNormalImage] forState:UIControlStateNormal];
+    [self.showKeyBoard setImage:showNormalImage.length?[UIImage imageNamed:showNormalImage]:nil forState:UIControlStateNormal];
 }
 
 -(void)setShowSelectedImage:(NSString *)showSelectedImage{
     _showSelectedImage = showSelectedImage;
-   [self.showKeyBoard setImage:[UIImage imageNamed:showSelectedImage] forState:UIControlStateSelected];
+    [self.showKeyBoard setImage:showSelectedImage.length?[UIImage imageNamed:showSelectedImage]:nil forState:UIControlStateNormal];
 }
-
 
 -(void)setActionTypeDic:(NSArray *)actionTypeDic{
     _actionTypeArray = actionTypeDic;
@@ -157,6 +156,7 @@ static NSString * resuIdentifierId = @"CSToolBarCell";
 -(UIButton *)showKeyBoard{
     if (!_showKeyBoard) {
         _showKeyBoard = [[UIButton alloc]initWithFrame:CGRectZero];
+        
         [_showKeyBoard setImage:[UIImage imageNamed:@"ShowKeyBoard"] forState:UIControlStateNormal];
         [_showKeyBoard addTarget:self action:@selector(didShowKeyBoardAction:) forControlEvents:UIControlEventTouchUpInside];
         

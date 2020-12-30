@@ -60,6 +60,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:alphy]
 
 #define kNavigationColor kUIColorFromRGB(0x6dd7d5,1.0)
 #define kUBOGreenColor kUIColorFromRGB(0x00ba97,1.0)
-#define  kAddImage [UIImage  imageNamed:@"addImag"]
+//#define  kAddImage [UIImage  imageNamed:@"addImag"]
 
 #endif /* PublicConfig_h */
