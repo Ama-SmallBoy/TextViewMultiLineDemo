@@ -258,6 +258,10 @@
         _textView.textContainerInset = UIEdgeInsetsZero; //关闭textview的默认间距属性
         _textView.textContainer.lineFragmentPadding = 0;
         _textView.placeholder = @"给你一个神评的机会";
+        //隐藏 完成 按钮 --- toolbar
+        UIToolbar * toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 0)];
+        toolBar.hidden = YES;
+        _textView.inputAccessoryView = toolBar;
     }
     return _textView;
 }

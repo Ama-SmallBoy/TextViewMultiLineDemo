@@ -90,7 +90,7 @@
         _keyBoardView =[[CSKeyBoardView alloc]initWithFrame:CGRectZero];
         _keyBoardView.backgroundColor =[UIColor whiteColor];
         _keyBoardView.maxLine = 3;
-        _keyBoardView.font = [UIFont systemFontOfSize:18.0];
+        _keyBoardView.font = [UIFont systemFontOfSize:15.0];
         _keyBoardView.topOrBottomEdge = 10;
         [_keyBoardView beginUpdateUI];
         _keyBoardView.keyBoardViewDelegate = self;

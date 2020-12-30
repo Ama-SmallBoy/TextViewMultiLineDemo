@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,10 +89,8 @@
 		00043F98240E82B900BD9EFF /* TextViewMultiLineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				049A7A24259C7B770086A67A /* TextViewMultiLineSDK */,
 				00043FC7240E85E500BD9EFF /* CustomVC */,
-				00043FC5240E855D00BD9EFF /* PublicUtil */,
-				00043FBC240E850E00BD9EFF /* CustomToolBar */,
-				00043FB2240E84CB00BD9EFF /* LifeTextView */,
 				00043F99240E82B900BD9EFF /* AppDelegate.h */,
 				00043F9A240E82B900BD9EFF /* AppDelegate.m */,
 				00043F9C240E82B900BD9EFF /* SceneDelegate.h */,
@@ -150,6 +148,16 @@
 			path = CustomVC;
 			sourceTree = "<group>";
 		};
+		049A7A24259C7B770086A67A /* TextViewMultiLineSDK */ = {
+			isa = PBXGroup;
+			children = (
+				00043FC5240E855D00BD9EFF /* PublicUtil */,
+				00043FBC240E850E00BD9EFF /* CustomToolBar */,
+				00043FB2240E84CB00BD9EFF /* LifeTextView */,
+			);
+			path = TextViewMultiLineSDK;
+			sourceTree = "<group>";
+		};
 		4BA3962742C5BC15935AB756 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +186,6 @@
 				00043F92240E82B900BD9EFF /* Sources */,
 				00043F93240E82B900BD9EFF /* Frameworks */,
 				00043F94240E82B900BD9EFF /* Resources */,
-				D1F20AA5B6FA059CEA387172 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,23 +243,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D1F20AA5B6FA059CEA387172 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextViewMultiLineDemo/Pods-TextViewMultiLineDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TextViewMultiLineDemo/Pods-TextViewMultiLineDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextViewMultiLineDemo/Pods-TextViewMultiLineDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E25703890E1E860EF2F34A02 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
